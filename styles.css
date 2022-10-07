@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.qr-container {
+    align-items: center;
+    height: 100vh;
+    background-color:  hsl(218, 44%, 22%);
+}
+
+.qr-cover {
+    display: block;
+    background-color: hsl(220, 15%, 55%);
+    width: 60%;
+}
+
+.qr-image {
+    width: 90%;
+    height: 25%;
+}
