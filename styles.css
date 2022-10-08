@@ -5,29 +5,29 @@
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
 }
-
+/* Mobile-first design */
 .qr-container {
     display: flex;
     align-items: center;
     height: 100vh;
-    background-color:  hsl(218, 44%, 22%);
+    background-color:  hsl(217, 81%, 90%);
     justify-content: center;
 }
 
 .qr-cover {
     display: inline-block;
     background-color:hsl(0, 0%, 100%);
-    width: 90%;
+    width: 20%;
     text-align: center;
     border-radius: 20px;
-    height: 80%;
+    height: 65%;
 }
 
 .qr-image {
     width: 90%;
-    height: 60%;
+    height: 53%;
     border-radius: 20px;
-    margin: 1rem;
+    margin: 0.7rem;
 }
 
 .qr-main-text {
@@ -40,6 +40,70 @@
     text-align: center;
     margin: 0.5rem 1.6rem;
     font-weight: 400;
-    color: hsl(220, 15%, 55%);
-    
+    color: hsl(220, 15%, 55%);   
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+    .qr-cover {
+        width: 35%;
+        height: 75%;
+    }
+    .qr-container {
+        background-color: orangered;
+    }
+}
+/* Mobile: 375px
+- Desktop: 1440px */
+
+
+@media only screen and (min-width: 670px) and (max-width: 1220px){
+    .qr-cover {
+        width: 35%;
+        height: 75%;
+    }
+    .qr-main-text {
+        margin: 1.5rem;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .qr-text {
+        margin: 1.5rem;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .qr-container {
+        background-color: yellowgreen;
+    }
+}
+
+
+@media only screen and (min-width: 380px) and (max-width: 650px) {
+    .qr-cover {
+        width: 75%;
+        height: 80%;
+    }
+    .qr-main-text {
+        margin: 1rem;
+        font-weight: 700;
+        font-size: larger;
+    }
+    .qr-text {
+        margin: 1rem;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .qr-container {
+        background-color: rebeccapurple;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .qr-cover {
+        width: 85%;
+        height: 85%;
+    }
+    .qr-container {
+        background-color: rgb(177, 124, 46);
+    }
 }
